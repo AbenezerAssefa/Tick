@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tic Tak Toe</title>
+</head>
+
+<body>
+  <h1>Tic Tak Toe</h1>
+  <!-- winner notification -->
+  <div class="overlay" id="overlay">
+    <div class="notification">
+    <div class="winner-message" id="winner-message"></div>
+    <button type="reset" id="winbtnreset">Next Round</button>
+    </div>
+  </div>
+
+  </div>
+  <div id="container">
+    <div class="row">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+    </div>
+    <div class="row">
+      <div class="box" id="box4"></div>
+      <div class="box" id="box5"></div>
+      <div class="box" id="box6"></div>
+    </div>
+    <div class="row">
+      <div class="box" id="box7"></div>
+      <div class="box" id="box8"></div>
+      <div class="box" id="box9"></div>
+    </div>
+    <div class="countrow">
+      <div class="xcounts">
+        <p>X(You) </p>
+        <span id="x-count">0</span>
+      </div>
+      <button type="reset" id="btnreset">Reset</button>
+      <div class="ocounts">
+        <p>O(CPU)</p>
+        <span id="o-count">0</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

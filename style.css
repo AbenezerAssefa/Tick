@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  background-color: darkblue;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: yellowgreen;
+  margin: 0 25% 0 25%;
+}
+
+@media screen and (min-width: 764px) {
+  #container {
+    width: 100%;
+    position: relative;
+    max-width: 800px; /* set the maximum width of the div */
+    margin: 0 auto; /* center the div horizontally */
+
+    /* use calc to subtract half of the div's width from the left margin */
+    margin-left: calc(50% - 260px);
+    margin-top: 3%;
+    height: 110vh;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px;
+    height: 150px;
+    width: 500px;
+  }
+
+  .countrow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px;
+    width: 500px;
+  }
+
+  .box {
+    background-color: #1f3540;
+    padding: 4px;
+    border-radius: 8px;
+    color: #31c4be;
+    font-size: 5em;
+    text-align: center;
+    text-decoration: solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    box-shadow: 1px 10px #192a32;
+  }
+
+  .xcounts {
+    border: 1px solid #ccc;
+    background-color: palevioletred;
+    padding: 4px;
+    border-radius: 8px;
+  }
+
+  .ocounts {
+    border: 1px solid #ccc;
+    background-color: palevioletred;
+    padding: 4px;
+    border-radius: 8px;
+  }
+
+  .countrow > button {
+    border: 1px solid #ccc;
+    background-color: greenyellow;
+    padding: 4px;
+    border-radius: 8px;
+    color: #192a32;
+  }
+
+  #winbtnreset {
+    background-color: #f2b237;
+    box-shadow: 5px 10px #192a32;
+    padding: 10px;
+    margin: 1rem 35%;
+    border-radius: 8px;
+    color: #192a32;
+  }
+
+  .notification {
+    background-color: inherit;
+  }
+
+  .countrow > .xcounts > p,
+  .countrow > .ocounts > p {
+    color: #192a32;
+    background-color: inherit;
+    text-align: center;
+  }
+
+  .countrow > .ocounts > span,
+  .countrow > .xcounts > span {
+    color: #192a32;
+    background-color: inherit;
+    margin: 66px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100vw;
+    height: 200px;
+    background-color: #1f3540;
+    justify-content: center;
+    display: none;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .winner-message {
+    font-size: 24px;
+    color: #18faf2;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background-color: inherit;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  #container {
+    width: 100%; /* set the width of the div to 100% */
+    max-width: 800px; /* set the maximum width of the div */
+    margin: 0 auto; /* center the div horizontally */
+
+    /* use calc to subtract half of the div's width from the left margin */
+    margin-left: calc(50% - 109px);
+    position: relative;
+    margin-top: 6%;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0.5rem;
+    gap: 5px;
+    height: 5rem;
+    width: 13rem;
+  }
+
+  .box {
+    background-color: #1f3540;
+    padding: 4px;
+    border-radius: 8px;
+    color: #31c4be;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    box-shadow: 1px 10px #192a32;
+  }
+
+  .countrow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0.5rem;
+    gap: 5px;
+    height: 5rem;
+    width: 13rem;
+  }
+
+  .xcounts {
+    border: 1px solid #ccc;
+    background-color: #f2b237;
+    padding: 4px;
+    border-radius: 8px;
+  }
+
+  .ocounts {
+    border: 1px solid #ccc;
+    background-color: #31c4be;
+    padding: 4px;
+    border-radius: 8px;
+  }
+
+  .countrow > button {
+    border: 1px solid #ccc;
+    background-color: #abc0cb;
+    padding: 4px;
+    border-radius: 8px;
+    color: #192a32;
+  }
+
+  #winbtnreset {
+    background-color: #f2b237;
+    box-shadow: 5px 10px #192a32;
+    padding: 10px;
+    margin: 1rem 35%;
+    border-radius: 8px;
+    color: #192a32;
+  }
+
+  .notification {
+    background-color: inherit;
+  }
+
+  .countrow > .xcounts > p,
+  .countrow > .ocounts > p {
+    color: #192a32;
+    background-color: inherit;
+    text-align: center;
+  }
+
+  .countrow > .ocounts > span,
+  .countrow > .xcounts > span {
+    color: #192a32;
+    background-color: inherit;
+    margin: 50%;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100vw;
+    height: 200px;
+    background-color: #1f3540;
+    justify-content: center;
+    display: none;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .winner-message {
+    font-size: 24px;
+    color: #18faf2;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background-color: inherit;
+  }
+}
