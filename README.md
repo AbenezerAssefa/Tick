@@ -25,6 +25,8 @@
 
 # 📖 Awsome Books<a name="about-project"></a>
 
+It is a known game.
+
 **Awsome Books** is a website that stores a books which can add and also remove.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -67,7 +69,7 @@ I find the following features to be intresting::
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Link to live demo](https://abenezerassefa.github.io/Awsome-Books-Js/)
+[Link to live demo](https://abenezerassefa.github.io/Tick/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +91,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/AbenezerAssefa/Awsome-Books-Js.git
+  git clone https://github.com/AbenezerAssefa/Tick.git
 ```
 
 ### Install
@@ -121,7 +123,7 @@ Example command:
 
 ### Deployment
 
-- https://abenezerassefa.github.io/Awsome-Books-Js/
+- https://abenezerassefa.github.io/Tick/
 
 <!--
 Example:
